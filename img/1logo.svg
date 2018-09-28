@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 36px;
+      }
+
+      .cls-1, .cls-4 {
+        font-family: Baumans-Regular, Baumans;
+      }
+
+      .cls-2 {
+        letter-spacing: 0.03em;
+      }
+
+      .cls-3 {
+        font-size: 16px;
+        font-family: SegoeUI, Segoe UI;
+      }
+    </style>
+  </defs>
+  <text id="AUTO_PARTS_автомобильные_детали" data-name="AUTO PARTS
+автомобильные   детали" class="cls-1" transform="translate(104 34)"><tspan class="cls-2"><tspan x="-103.41" y="0">AUTO PARTS</tspan></tspan><tspan class="cls-3"><tspan x="-88.951" y="26">автомобильные</tspan><tspan class="cls-4" y="26" xml:space="preserve">   </tspan><tspan y="26">детали</tspan></tspan></text>
+</svg>

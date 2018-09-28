@@ -1,0 +1,540 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--*/
+
+@font-face {
+    font-family: Segoe UI;
+    src: url(../fonts/segoeui.ttf);
+    font-family: Baumans;
+    src: url(../fonts/Baumans-Regular.ttf);
+}
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1E212A;
+    color: white;   
+    margin: 0 auto;
+}
+.container {
+	width: 90%;
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 800px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.header .container {
+    display: flex;
+}
+.header .container .menu {
+    flex: 1;
+}
+.header .container .menu ul {
+    display: flex;
+    flex-direction: row;
+}
+.header .container .menu li {
+    margin: 40px auto auto 0;
+    font-size: 18px;
+}
+.header .container .menu a {
+    text-decoration: none;
+    color: white;
+}
+.header .container .menu a:hover {
+    color: #CE9840;
+}
+.header .container .logo {
+    flex: 1;
+    text-align: center;
+    margin: 20px auto 17px auto;
+}
+.header .container .logo img {
+    width: 200px;
+}
+.header .container .icons-flex {
+    flex: 1;
+    display: flex;
+}
+.header .container .place {
+    flex: 5;
+}
+.header .container .icons {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    margin: 38px auto;
+}
+.header .container .icons .user {
+    background-image: url("../img/2user.svg");
+    background-size: 23.82px 23.81px;
+    width: 23.82px;
+    height: 23.81px;
+    background-repeat: no-repeat;
+}
+.header .container .icons .user:hover {
+    background-image: url("../img/2user2.svg");
+    background-repeat: no-repeat;
+}
+.header .container .icons .basket {
+    background-image: url("../img/3basket.svg");
+    background-size: 26.32px 24.05px;
+    width: 26.32px;
+    height: 24.05px;
+    background-repeat: no-repeat;
+}
+.header .container .icons .basket:hover {
+    background-image: url("../img/3basket2.svg");
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+.search {
+    background-color: #707070;
+}
+.search .containersmall {
+    display: flex;
+    max-width: 1500px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+.search .containersmall .searchtext {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search .searchtext .abz {
+    width: 80%;
+    font-size: 25px;
+    line-height: 35px;
+    margin-left: 10%;
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+.search .searchtext .searchsearch {
+    flex: 1;
+    margin-left: 10%;
+    padding-bottom: 10%;
+    width: 180%;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+    .tabsearch {
+        flex: 1;
+    }
+    .tabsearch img {
+        width: 195px;
+        margin-bottom: -2px;
+    }
+    .tabsearch .img1 {
+        margin-left: -5px;
+    }
+.search .searchtext .searchsearch input {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: #020202;
+    border: 0;
+    padding-left: 17px; 
+    padding-right: 17px;
+    cursor: text;
+}
+.search .searchtext .searchsearch .button {
+    width: 80px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .searchtext .searchsearch .button img {
+    width: 25px;
+}
+.search .containersmall .searchimg {
+    flex: 1;
+    background-image: url("../img/50search.png");
+    background-size: 751px 423px;
+    width: 751px;
+    height: 423px;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+
+
+
+
+.slider {
+    background-color: #CE9840;
+}
+#slider { /*положение слайдера*/
+    text-align: center;
+    margin: 0 auto;
+}
+#slides .pic { /*все изображения справа друг от друга*/
+	width: 20%;
+	float: left;
+}
+#slides .image { /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	/* line-height: 0; */
+}
+#overflow { /*сркывает все, что находится за пределами этого блока*/
+	/* width: 100%; */
+	overflow: hidden;
+}
+.image .pic img { /*размер изображений слайдера*/
+    width: 90%;
+    margin-bottom: 5px;
+}
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+    width: 100%;
+}
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2) {
+	background-image: url("../img/51arrow1.png"); /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -18% 0 0 3%; 
+	display: block;
+	height: 44px;
+    width: 26px;
+}
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3){
+	background-image: url("../img/52arrow1.png"); /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: -18% 3% 0 0; 
+	display: block;
+	height: 44px;
+    width: 26px;
+}
+label, input{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#active label{ /*стиль кружочков*/
+	border-radius: 50%; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+    background: rgb(255, 255, 255);
+    margin: 3px;
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+}
+#active{ /*расположение блока с переключателями*/
+	margin: -35px 0 0 0;
+	text-align: center;
+}
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #707070;
+}
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3) {
+	background: #1E212A;
+}
+#slides .image { /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+
+
+
+
+.goodsname .container h6 {
+    color: white;
+    text-align: center;
+    padding: 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+.goods .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 800px;
+}
+.cell {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: #020202;
+    min-width: 382px;
+    max-width: 382px;
+    height: 202px;
+    margin-bottom: 2%;
+}
+.cell .list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+    .cell .name {
+        flex: 1;
+        padding: 40px 10px 20px 40px;
+    }
+    .cell .scroll {
+        flex: 2;
+        padding: 20px 10px 40px 40px;
+    }
+    .cell .scroll ul {
+        line-height: 25px;
+    }
+    .cell .name a {
+        text-decoration: none;
+        color: #CE9840;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .cell .scroll a{
+        text-decoration: none;
+        color: #020202;
+
+    }
+.cell .pic {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.cell img {
+    width: 130px;
+}
+.cell .bigpic4 {
+    background-image: url("../img/g4.png");
+    background-repeat: no-repeat;
+    width: 382px;
+    height: 202px;
+}
+.cell .bigpic9 {
+    background-image: url("../img/g9.png");
+    background-repeat: no-repeat;
+    width: 382px;
+    height: 250px;
+}
+
+
+
+
+
+.cataloguename .container h6 {
+    color: white;
+    text-align: center;
+    padding: 60px 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.catalogue .container {
+    margin-bottom: 70px;
+}
+.catalogue .bykva {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.catalogue .bykva .alpha {
+    flex: 1;
+    color: #CE9840;
+    font-weight: bold;
+    line-height: 25px;  
+}
+.catalogue .bykva .beta {
+    flex: 4;
+    line-height: 25px;
+}
+.catalogue .perech {
+    column-count: 6;
+    column-width: 180px;
+    column-gap: 40px;;
+}
+.catalogue .beta a {
+    text-decoration: none;
+    color: white;
+}
+.catalogue .beta a:hover {
+    color: #CE9840;
+}
+
+
+
+
+.stripe {
+	background-color: #CE9840;
+	height: 3px;
+}
+
+
+
+.footer .container {
+    display: flex;
+}
+.footer .karta {
+    flex: 1;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    text-align: right;
+}
+.footer .contacts-flex {
+    flex: 1;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    display: flex;
+}
+.footer .icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    padding-left: 30%;
+    padding-right: 30%;
+    flex-wrap: wrap;
+}
+.footer .container .tg {
+    background-image: url("../img/97tg.svg");
+    background-size: 40.8px 35.17px;
+    width: 40.8px;
+    height: 35.17px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.footer .container .tg:hover {
+    background-image: url("../img/97tg2.svg");
+    background-repeat: no-repeat;
+}
+.footer .container .fb {
+    background-image: url("../img/98fb.svg");
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.footer .container .fb:hover {
+    background-image: url("../img/98fb2.svg");
+    background-repeat: no-repeat;
+}
+.footer .container .vk {
+    background-image: url("../img/99vk.svg");
+    background-size: 50px 29.51px;
+    width: 50px;
+    height: 29.51px;
+    background-repeat: no-repeat;
+}
+.footer .container .vk:hover {
+    background-image: url("../img/99vk2.svg");
+    background-repeat: no-repeat;
+}
+.footer .spisok {
+    flex: 1;
+    margin-bottom: 95px;
+    font-size: 16px;
+    color: #707070;
+    margin-top: 95px;
+    padding-top: 30px;
+}
+.footer .spisok h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+}
+.footer .spisok ul {
+    line-height: 150%;
+}
+.footer .spisok a {
+    text-decoration: none;
+    color: #707070;
+}
+.footer .spisok a:hover {
+    color: white;
+}
+
+

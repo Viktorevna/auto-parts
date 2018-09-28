@@ -1,0 +1,24 @@
+<svg id="_043-cart" data-name="043-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.854 33.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_3" data-name="Path 3" class="cls-1" d="M36.621,14.266a1.085,1.085,0,0,0-.83-.379H7.5l-.791-3.258A1.053,1.053,0,0,0,5.67,9.846H1.063a1.011,1.011,0,1,0,0,2.02H4.824l5.371,22.113a1.053,1.053,0,0,0,1.036.783h21.3a1.011,1.011,0,1,0,0-2.02H12.076l-.818-3.367H32.6a1.053,1.053,0,0,0,1.037-.788l3.189-13.468A.972.972,0,0,0,36.621,14.266Z" transform="translate(0 -9.846)"/>
+    </g>
+  </g>
+  <g id="Group_4" data-name="Group 4" transform="translate(11.694 26.263)">
+    <g id="Group_3" data-name="Group 3">
+      <path id="Path_4" data-name="Path 4" class="cls-1" d="M166.359,393.846a3.708,3.708,0,1,0,3.9,3.7A3.809,3.809,0,0,0,166.359,393.846Z" transform="translate(-162.461 -393.846)"/>
+    </g>
+  </g>
+  <g id="Group_6" data-name="Group 6" transform="translate(24.451 26.263)">
+    <g id="Group_5" data-name="Group 5">
+      <path id="Path_5" data-name="Path 5" class="cls-1" d="M343.59,393.846a3.708,3.708,0,1,0,3.9,3.7A3.809,3.809,0,0,0,343.59,393.846Z" transform="translate(-339.692 -393.846)"/>
+    </g>
+  </g>
+</svg>
