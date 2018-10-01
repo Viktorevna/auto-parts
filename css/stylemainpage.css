@@ -62,10 +62,10 @@ body {
     max-width: 1500px;
     min-width: 800px;
 }
-.main {
+/* .main {
     display: flex;
     flex-direction: column;
-}
+} */
 
 
 
@@ -87,6 +87,7 @@ body {
 .header .container .menu a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s;
 }
 .header .container .menu a:hover {
     color: #CE9840;
@@ -184,19 +185,19 @@ body {
         margin-bottom: -2px;
     }
     .tabsearch .img1 {
-        margin-left: -5px;
+        margin-left: -7px;
     }
-.search .searchtext .searchsearch input {
+.search .searchsearch input {
     width: 100%;
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     color: #020202;
     border: 0;
     padding-left: 17px; 
     padding-right: 17px;
     cursor: text;
 }
-.search .searchtext .searchsearch .button {
+.search .searchsearch .button {
     width: 80px;
     height: 50px;
     background-color: white;
@@ -204,7 +205,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.search .searchtext .searchsearch .button img {
+.search .searchsearch .button img {
     width: 25px;
 }
 .search .containersmall .searchimg {
@@ -251,8 +252,9 @@ body {
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2) {
-	background-image: url("../img/51arrow1.png"); /*заливка фона картинкой без повторений*/
-	float: left;
+	background-image: url("../img/51arrow1.svg"); /*заливка фона картинкой без повторений*/
+    background-repeat: no-repeat;
+    float: left;
 	margin: -18% 0 0 3%; 
 	display: block;
 	height: 44px;
@@ -261,8 +263,9 @@ body {
 /*настройка переключения и положения для правой стрелки*/
 #switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3){
-	background-image: url("../img/52arrow1.png"); /*заливка фона картинкой без повторений*/
-	float: right;
+	background-image: url("../img/52arrow1.svg"); /*заливка фона картинкой без повторений*/
+    background-repeat: no-repeat;
+    float: right;
 	margin: -18% 3% 0 0; 
 	display: block;
 	height: 44px;
@@ -291,6 +294,7 @@ label, input{ /*при наведении на стрелки или перек�
 	width: 15px;
 	height: 15px;
     background: rgb(255, 255, 255);
+    transition: background-color 0.3s;
     margin: 3px;
     margin-bottom: 10px;
     /* border: 2px solid red; */
@@ -318,13 +322,19 @@ label, input{ /*при наведении на стрелки или перек�
 
 
 
-
 .goodsname .container h6 {
-    color: white;
     text-align: center;
     padding: 70px;
     font-size: 25px;
     font-weight: bold;
+}
+.goodsname .container a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.goodsname .container a:hover {
+    color: #CE9840;
 }
 
 
@@ -346,6 +356,7 @@ label, input{ /*при наведении на стрелки или перек�
     max-width: 382px;
     height: 202px;
     margin-bottom: 2%;
+    overflow: hidden;
 }
 .cell .list {
     flex: 2;
@@ -353,31 +364,46 @@ label, input{ /*при наведении на стрелки или перек�
     flex-direction: column;
 }
     .cell .name {
-        flex: 1;
-        padding: 40px 10px 20px 40px;
+        flex: 2;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 0;
     }
     .cell .scroll {
-        flex: 2;
-        padding: 20px 10px 40px 40px;
+        flex: 3;
+        display: flex;
+        padding-left: 40px;
     }
     .cell .scroll ul {
         line-height: 25px;
+    }
+    .cell .scroll ul li {
+        display: flex;
+        align-items: center;
     }
     .cell .name a {
         text-decoration: none;
         color: #CE9840;
         font-weight: bold;
         font-size: 20px;
+        transition: font-size 0.1s;
     }
-    .cell .scroll a{
+        .cell .name a:hover {
+            font-size: 22px;
+        }
+    .cell .scroll a {
         text-decoration: none;
         color: #020202;
-
+        transition: font-size 0.1s;
     }
+        .cell .scroll a:hover {
+            font-size: 18px;
+        }
 .cell .pic {
     flex: 1;
     text-align: center;
-    margin: 10px;
+    margin-right: 10px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -403,17 +429,26 @@ label, input{ /*при наведении на стрелки или перек�
 
 
 .cataloguename .container h6 {
-    color: white;
     text-align: center;
-    padding: 60px 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
     font-size: 25px;
     font-weight: bold;
+}
+.cataloguename .container a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.cataloguename .container a:hover {
+    color: #CE9840;
 }
 
 
 
+
 .catalogue .container {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 .catalogue .bykva {
     display: flex;
@@ -439,6 +474,7 @@ label, input{ /*при наведении на стрелки или перек�
 .catalogue .beta a {
     text-decoration: none;
     color: white;
+    transition: color 0.2s;
 }
 .catalogue .beta a:hover {
     color: #CE9840;
@@ -446,10 +482,18 @@ label, input{ /*при наведении на стрелки или перек�
 
 
 
+.background {
+    background-image: url(../img/60back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1800px;
+}
+
+
 
 .stripe {
 	background-color: #CE9840;
-	height: 3px;
+	height: 15px;
 }
 
 
@@ -457,7 +501,7 @@ label, input{ /*при наведении на стрелки или перек�
 .footer .container {
     display: flex;
 }
-.footer .karta {
+.footer .map {
     flex: 1;
     margin-top: 95px;
     margin-bottom: 95px;
@@ -532,6 +576,7 @@ label, input{ /*при наведении на стрелки или перек�
 .footer .spisok a {
     text-decoration: none;
     color: #707070;
+    transition: color 0.3s;
 }
 .footer .spisok a:hover {
     color: white;
