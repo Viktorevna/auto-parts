@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--*/
+
+
+@font-face {
+    font-family: Segoe UI;
+    src: url(../fonts/segoeui.ttf);
+    font-family: Baumans;
+    src: url(../fonts/Baumans-Regular.ttf);
+}
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1E212A;
+    color: white;   
+    margin: 0 auto;
+}
+.container {
+	width: 90%;
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 800px;
+}
+
+
+
+
+.header .container {
+    display: flex;
+}
+.header .menu {
+    flex: 1;
+}
+.header .menu .menu_main {
+    display: flex;
+    flex-direction: row;
+}
+.header .menu .menu_list {
+    position: relative;
+}
+.header .menu .menu_drop {
+    position: absolute;
+    width: 250px;
+    background-color: #1E212A;  
+    opacity: 0;
+    margin-left: -12px;
+    padding-top: 38px;
+    left: -99999em;
+    transition: opacity 0.3s;
+}
+    .header .menu .menu_drop li{
+        padding: 12px;
+    }
+.header .menu .menu_list:hover .menu_drop {
+    opacity: 1;
+    left: 0;
+}
+.header .container .menu .menu_main > li {
+    margin: 40px auto auto 0;
+    font-size: 18px;
+}
+.header .container .menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.header .container .menu a:hover {
+    color: #CE9840;
+}
+.header .container .logo {
+    flex: 1;
+    text-align: center;
+    margin: 20px auto 17px auto;
+}
+.header .container .logo img {
+    width: 200px;
+}
+.header .container .icons-flex {
+    flex: 1;
+    display: flex;
+}
+.header .container .place {
+    flex: 3;
+}
+.header .container .icons {
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    margin: 38px auto;
+}
+.header .icons .phone {
+    background-image: url("../img/mainpage/1phone.svg");
+    background-size: 23.8px 23.81px;
+    width: 23.8px;
+    height: 23.81px;
+    background-repeat: no-repeat;
+}
+    .header .icons .phone:hover {
+        background-image: url("../img/mainpage/1phone2.svg");
+        background-repeat: no-repeat;
+    }
+.header .icons .phone_list {
+    position: relative;
+}
+.header .icons .phone_drop {
+    position: absolute;
+    width: 300px;
+    background-color: #1E212A;  
+    opacity: 0;
+    z-index: 1;
+    text-align: left;
+    margin-left: -80px;
+    padding-top: 38px;
+    left: -99999em;
+    transition: opacity 0.3s;
+}
+    .header .icons .phone_drop li {
+        padding: 12px;
+    }
+    .header .icons .phone_drop li span {
+        font-weight: bold;
+        color: #CE9840;
+    }
+    .header .icons .phone_drop li a {
+        color: white;
+    }
+.header .icons .phone_list:hover .phone_drop {
+    opacity: 1;
+    left: 0;
+}
+.header .icons .user {
+    background-image: url("../img/mainpage/2user.svg");
+    background-size: 23.82px 23.81px;
+    width: 23.82px;
+    height: 23.81px;
+    background-repeat: no-repeat;
+}
+    .header .icons .user:hover {
+        background-image: url("../img/mainpage/2user2.svg");
+        background-repeat: no-repeat;
+    }
+.header .icons .basket {
+    background-image: url("../img/mainpage/3basket.svg");
+    background-size: 26.32px 24.05px;
+    width: 26.32px;
+    height: 24.05px;
+    background-repeat: no-repeat;
+}
+    .header .icons .basket:hover {
+        background-image: url("../img/mainpage/3basket2.svg");
+        background-repeat: no-repeat;
+    }
+.header .icons .quest {
+    background-image: url("../img/mainpage/4quest.svg");
+    background-size: 15.08px 23.81px;
+    width: 15.08px;
+    height: 23.81px;
+    background-repeat: no-repeat;
+}
+    .header .icons .quest:hover {
+        background-image: url("../img/mainpage/4quest2.svg");
+        background-repeat: no-repeat;
+    } 
+
+

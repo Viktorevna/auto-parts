@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.119 35.647">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #1e212a;
+        font-size: 18px;
+        font-family: SegoeUI, Segoe UI;
+      }
+    </style>
+  </defs>
+  <g id="Group_17" data-name="Group 17" transform="translate(-48.4 -418.953)">
+    <path id="Path_9" data-name="Path 9" class="cls-1" d="M157.4,383.047,177.766,347.4H350.88l21.639,35.647Z" transform="translate(-109 71.553)"/>
+    <text id="марка_машины" data-name="марка машины" class="cls-2" transform="translate(156.265 441.753)"><tspan x="-62.613" y="0">марка машины</tspan></text>
+  </g>
+</svg>

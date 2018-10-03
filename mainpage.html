@@ -6,489 +6,504 @@
         <title>Главная</title>
     </head>
     <body>
-        <div class="main">
-            <div class="header">
+        <div class="header">
+            <div class="container">
+                <div class="menu">
+                    <ul class="menu_main">
+                        <li><a href="mainpage.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li class="menu_list"><a href="#">Каталог</a>
+                            <ul class="menu_drop">
+                                <li><a href="#">Запчасти</a></li>
+                                <li><a href="#">Сопутствующие товары</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Оплата</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a href="mainpage.html" title="Главная"><img src="img/mainpage/1logo.svg"></a>
+                </div>
+                <div class="icons-flex">
+                    <div class="place"></div>
+                    <ul class="icons">
+                        <li class="phone_list"><a href='#'><div class="phone"></div></a>
+                            <ul class="phone_drop">
+                                <li><span>Москва: </span><a href="#">+7(495)287-12-07</a></li>
+                                <li><span>Санкт-Петербург: </span><a href="#">+7(812)703-01-73</a></li>
+                                <li><span>Минск: </span><a href="#">+375(29)132-08-79</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#' title="Авторизация"><div class="user"></div></a></li>
+                        <li><a href='#' title="Корзина"><div class="basket"></div></a></li>
+                        <li><a href='#' title="Помощь"><div class="quest"></div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <div class="containersmall">
+                <div class="searchtext">
+                    <div class="abz">
+                        50 млн. предложений<br>
+                        оригинальных автозапчастей<br>
+                        по актуальным ценам<br>
+                        с курьерской доставкой по городу и области
+                    </div>
+                    <div class="searchsearch">
+                        <div class="tabsearch">
+                            <div class="tab">
+                                <a href=#"><img src="img/mainpage/45tab.svg"></a>
+                                <a href=#"><img src="img/mainpage/46tab.svg" class="img1"></a>
+                                <a href=#"><img src="img/mainpage/47tab.svg" class="img1"></a>
+                            </div>
+                            <input type="search" placeholder="например, 9091901164">
+                        </div>
+                        <div class="button">
+                            <a href="#" title="Поиск"><img src="img/mainpage/48search.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchimg"> 
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="container">
+                <div class="all">
+                    <input checked type="radio" name="respond" id="desktop">
+                    <div id="slider">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input type="radio" name="slider" id="switch2">
+                        <input type="radio" name="slider" id="switch3">
+                        <input type="radio" name="slider" id="switch4">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image">
+                                    <div class="pic"><img src="img/mainpage/53pic.svg"></div>
+                                    <div class="pic"><img src="img/mainpage/54pic.svg"></div>
+                                    <div class="pic"><img src="img/mainpage/55pic.svg"></div>
+                                    <div class="pic"><img src="img/mainpage/56pic.svg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        </div>
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <div class="goodsname">
                 <div class="container">
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#" title="Главная">Главная</a></li>
-                            <li><a href="#" title="О нас">О нас</a></li>
-                            <li><a href="#" title="Каталог">Каталог</a></li>
-                            <li><a href="#" title="Оплата">Оплата</a></li>
-                        </ul>
-                    </div>
-                    <div class="logo">
-                        <a href="#" title="Главная"><img src="img/1logo.svg"></a>
-                    </div>
-                    <div class="icons-flex">
-                        <div class="place"></div>
-                        <div class="icons">
-                            <a href='#' title="Авторизация"><div class="user"></div></a>
-                            <a href='#' title="Корзина"><div class="basket"></div></a>
-                        </div>
-                    </div>
+                    <h6><a href="#">Сопутствующие товары</a></h6>
                 </div>
             </div>
-            <div class="search">
-                <div class="containersmall">
-                    <div class="searchtext">
-                        <div class="abz">
-                            50 млн. предложений<br>
-                            оригинальных автозапчастей<br>
-                            по актуальным ценам<br>
-                            с курьерской доставкой по городу и области
-                        </div>
-                        <div class="searchsearch">
-                            <div class="tabsearch">
-                                <div class="tab">
-                                    <a href=#"><img src="img/45tab.svg"></a>
-                                    <a href=#"><img src="img/46tab.svg" class="img1"></a>
-                                    <a href=#"><img src="img/47tab.svg" class="img1"></a>
-                                </div>
-                                <input type="search" placeholder="например, 9091901164">
-                            </div>
-                            <div class="button">
-                                <a href="#" title="Поиск"><img src="img/48search.svg"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="searchimg"> 
-                    </div>
-                </div>
-            </div>
-            <div class="slider">
+            <div class="goods">
                 <div class="container">
-                    <div class="all">
-                        <input checked type="radio" name="respond" id="desktop">
-                        <div id="slider">
-                            <input checked type="radio" name="slider" id="switch1">
-                            <input type="radio" name="slider" id="switch2">
-                            <input type="radio" name="slider" id="switch3">
-                            <div id="slides">
-                                <div id="overflow">
-                                    <div class="image">
-                                        <div class="pic"><img src="img/53pic.svg"></div>
-                                        <div class="pic"><img src="img/54pic.svg"></div>
-                                        <div class="pic"><img src="img/55pic.svg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="controls">
-                                <label for="switch1"></label>
-                                <label for="switch2"></label>
-                                <label for="switch3"></label>
-                            </div>
-                            <div id="active">
-                                <label for="switch1"></label>
-                                <label for="switch2"></label>
-                                <label for="switch3"></label>
+                    <div class="cell">
+                        <div class="list">
+                            <div class="name"><a href="#">Автохимия</a></div>
+                            <div class="scroll">
+                                <ul>
+                                    <li><a href="#">Смазки</a></li>
+                                    <li><a href="#">Присадки</a></li>
+                                    <li><a href="#">Ароматизаторы</a></li>
+                                </ul>
                             </div>
                         </div>
+                        <div class="pic">
+                            <img src="img/mainpage/g1.png">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="list">
+                            <div class="name"><a href="#">Шины</a></div>
+                            <div class="scroll">
+                                <ul>
+                                    <li><a href="#">Летние</a></li>
+                                    <li><a href="#">Зимние</a></li>
+                                    <li><a href="#">Всесезонные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img src="img/mainpage/g2.png">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="list">
+                            <div class="name"><a href="#">Диски</a></div>
+                            <div class="scroll">
+                                <ul>
+                                    <li><a href="#">Литые</a></li>
+                                    <li><a href="#">Штампованные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img src="img/mainpage/g3.png">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="bigpic4"></div>
+                    </div>
+                    <div class="cell">
+                        <div class="list">
+                            <div class="name"><a href="#">Автоэлектроника</a></div>
+                            <div class="scroll">
+                                <ul>
+                                    <li><a href="#">Лампы</a></li>
+                                    <li><a href="#">Аккамуляторы</a></li>
+                                    <li><a href="#">Прикуриватели</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img src="img/mainpage/g5.png">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="list">
+                            <div class="name"><a href="#">Щётки стеклоочистителя</a></div>
+                            <div class="scroll">
+                                <ul>
+                                    <li><a href="#">Каркасные</a></li>
+                                    <li><a href="#">Бескаркасные</a></li>
+                                    <li><a href="#">Гибридные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img src="img/mainpage/g6.png">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="list">
+                            <div class="name"><a href="#">Инструменты</a></div>
+                            <div class="scroll">
+                                <ul>
+                                    <li><a href="#">Много</a></li>
+                                    <li><a href="#">Разных</a></li>
+                                    <li><a href="#">Инструментов</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img src="img/mainpage/g7.png">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="list">
+                            <div class="name"><a href="#">Масла</a></div>
+                            <div class="scroll">
+                                <ul>
+                                    <li><a href="#">Трансмиссионные</a></li>
+                                    <li><a href="#">Моторные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pic">
+                            <img src="img/mainpage/g8.png">
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="bigpic9"></div>
                     </div>
                 </div>
             </div>
-            <div class="background">
-                <div class="goodsname">
-                    <div class="container">
-                        <h6><a href="#">Сопутствующие товары</a></h6>
-                    </div>
-                </div>
-                <div class="goods">
-                    <div class="container">
-                        <div class="cell">
-                            <div class="list">
-                                <div class="name"><a href="#">Автохимия</a></div>
-                                <div class="scroll">
-                                    <ul>
-                                        <li><a href="#">Смазки</a></li>
-                                        <li><a href="#">Присадки</a></li>
-                                        <li><a href="#">Ароматизаторы</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pic">
-                                <img src="img/g1.png">
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="list">
-                                <div class="name"><a href="#">Шины</a></div>
-                                <div class="scroll">
-                                    <ul>
-                                        <li><a href="#">Летние</a></li>
-                                        <li><a href="#">Зимние</a></li>
-                                        <li><a href="#">Всесезонные</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pic">
-                                <img src="img/g2.png">
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="list">
-                                <div class="name"><a href="#">Диски</a></div>
-                                <div class="scroll">
-                                    <ul>
-                                        <li><a href="#">Литые</a></li>
-                                        <li><a href="#">Штампованные</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pic">
-                                <img src="img/g3.png">
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="bigpic4"></div>
-                        </div>
-                        <div class="cell">
-                            <div class="list">
-                                <div class="name"><a href="#">Автоэлектроника</a></div>
-                                <div class="scroll">
-                                    <ul>
-                                        <li><a href="#">Лампы</a></li>
-                                        <li><a href="#">Аккамуляторы</a></li>
-                                        <li><a href="#">Прикуриватели</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pic">
-                                <img src="img/g5.png">
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="list">
-                                <div class="name"><a href="#">Щётки стеклоочистителя</a></div>
-                                <div class="scroll">
-                                    <ul>
-                                        <li><a href="#">Каркасные</a></li>
-                                        <li><a href="#">Бескаркасные</a></li>
-                                        <li><a href="#">Гибридные</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pic">
-                                <img src="img/g6.png">
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="list">
-                                <div class="name"><a href="#">Инструменты</a></div>
-                                <div class="scroll">
-                                    <ul>
-                                        <li><a href="#">Много</a></li>
-                                        <li><a href="#">Разных</a></li>
-                                        <li><a href="#">Инструментов</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pic">
-                                <img src="img/g7.png">
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="list">
-                                <div class="name"><a href="#">Масла</a></div>
-                                <div class="scroll">
-                                    <ul>
-                                        <li><a href="#">Трансмиссионные</a></li>
-                                        <li><a href="#">Моторные</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pic">
-                                <img src="img/g8.png">
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="bigpic9"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cataloguename">
-                    <div class="container">
-                        <h6><a href="#">Каталог запчастей</a></h6>
-                    </div>
-                </div>
-                <div class="catalogue">
-                    <div class="container">
-                        <div class="perech">
-                            <div class="bykva">
-                                <div class="alpha">
-                                    A
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Acura</a></li>
-                                        <li><a href="">Alfa Romeo</a></li>
-                                        <li><a href="">Audi</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    B
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">BMW</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    C
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Cadillac</a></li>
-                                        <li><a href="">Chery</a></li>
-                                        <li><a href="">Chevrolet</a></li>
-                                        <li><a href="">Chrysler</a></li>
-                                        <li><a href="">Citroen</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    D
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Daewoo</a></li>
-                                        <li><a href="">Dodge</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    F
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Fiat</a></li>
-                                        <li><a href="">Ford</a></li>
-                                        <li><a href="">Ford USA</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    G
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Geely</a></li>
-                                        <li><a href="">Great Wall</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    H
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Honda</a></li>
-                                        <li><a href="">Hyundai</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    I
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Infiniti</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    J
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Jaguar</a></li>
-                                        <li><a href="">Jeep</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    K
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Kia</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    L
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Land Rover</a></li>
-                                        <li><a href="">Lexus</a></li>
-                                        <li><a href="">Lifan</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    M
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Mazda</a></li>
-                                        <li><a href="">Mercedes</a></li>
-                                        <li><a href="">MINI</a></li>
-                                        <li><a href="">Mitsubishi</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    N
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Nissan</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    O
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Opel</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    P
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Peugeot</a></li>
-                                        <li><a href="">Pontiac</a></li>
-                                        <li><a href="">Porsche</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    R
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Renault</a></li>
-                                        <li><a href="">Rover</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    S
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Saab</a></li>
-                                        <li><a href="">Seat</a></li>
-                                        <li><a href="">Skoda</a></li>
-                                        <li><a href="">Smart</a></li>
-                                        <li><a href="">Ssangyong</a></li>
-                                        <li><a href="">Subaru</a></li>
-                                        <li><a href="">Suzuki</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    T
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Toyota</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    V
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">Volkswagen</a></li>
-                                        <li><a href="">Volvo</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    В
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">ВАЗ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    З
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">ЗАЗ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bykva">
-                                <div class="alpha">
-                                    У
-                                </div>
-                                <div class="beta">
-                                    <ul>
-                                        <li><a href="">УАЗ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="stripe"></div>
-            <div class="footer">
+            <div class="cataloguename">
                 <div class="container">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.5087380574809!2d30.356136761458252!3d59.931852181344524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4f393ff79%3A0x56bdbf13d5255400!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEwNCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTAyNQ!5e0!3m2!1sru!2sru!4v1537890084748" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="contacts-flex">
-                        <div class="icons">
-                            <a href='#' title="Telegram"><div class="tg"></div></a>
-                            <a href='#' title="Facebook"><div class="fb"></div></a>
-                            <a href='#' title="Вконтакте"><div class="vk"></div></a>
+                    <h6><a href="#">Каталог запчастей</a></h6>
+                </div>
+            </div>
+            <div class="catalogue">
+                <div class="container">
+                    <div class="perech">
+                        <div class="bykva">
+                            <div class="alpha">
+                                A
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Acura</a></li>
+                                    <li><a href="">Alfa Romeo</a></li>
+                                    <li><a href="">Audi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                B
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">BMW</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                C
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Cadillac</a></li>
+                                    <li><a href="">Chery</a></li>
+                                    <li><a href="">Chevrolet</a></li>
+                                    <li><a href="">Chrysler</a></li>
+                                    <li><a href="">Citroen</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                D
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Daewoo</a></li>
+                                    <li><a href="">Dodge</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                F
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Fiat</a></li>
+                                    <li><a href="">Ford</a></li>
+                                    <li><a href="">Ford USA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                G
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Geely</a></li>
+                                    <li><a href="">Great Wall</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                H
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Honda</a></li>
+                                    <li><a href="">Hyundai</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                I
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Infiniti</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                J
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Jaguar</a></li>
+                                    <li><a href="">Jeep</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                K
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Kia</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                L
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Land Rover</a></li>
+                                    <li><a href="">Lexus</a></li>
+                                    <li><a href="">Lifan</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                M
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Mazda</a></li>
+                                    <li><a href="">Mercedes</a></li>
+                                    <li><a href="">MINI</a></li>
+                                    <li><a href="">Mitsubishi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                N
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Nissan</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                O
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Opel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                P
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Peugeot</a></li>
+                                    <li><a href="">Pontiac</a></li>
+                                    <li><a href="">Porsche</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                R
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Renault</a></li>
+                                    <li><a href="">Rover</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                S
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Saab</a></li>
+                                    <li><a href="">Seat</a></li>
+                                    <li><a href="">Skoda</a></li>
+                                    <li><a href="">Smart</a></li>
+                                    <li><a href="">Ssangyong</a></li>
+                                    <li><a href="">Subaru</a></li>
+                                    <li><a href="">Suzuki</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                T
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Toyota</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                V
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">Volkswagen</a></li>
+                                    <li><a href="">Volvo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                В
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">ВАЗ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                З
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">ЗАЗ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bykva">
+                            <div class="alpha">
+                                У
+                            </div>
+                            <div class="beta">
+                                <ul>
+                                    <li><a href="">УАЗ</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="spisok">
-                        <h6>Auto parts</h6>
-                        <ul>
-                            <li><a href='#' title="Оплата">Оплата</a></li>
-                            <li><a href='#' title="Возврат">Возврат</a></li>
-                            <li><a href='#' title="О компании">О компании</a></li>
-                            <li><a href='#' title="Каталог">Каталог ТО</a></li>
-                            <li><a href='#' title="Сопутствующие товары">Сопутствующие товары</a></li>
-                            <li><a href='#' title="Акции">Акции</a></li>
-                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="stripe"></div>
+        <div class="footer">
+            <div class="container">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.5087380574809!2d30.356136761458252!3d59.931852181344524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4f393ff79%3A0x56bdbf13d5255400!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEwNCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTAyNQ!5e0!3m2!1sru!2sru!4v1537890084748" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="contacts-flex">
+                    <div class="icons">
+                        <a href='#' title="Telegram"><div class="tg"></div></a>
+                        <a href='#' title="Facebook"><div class="fb"></div></a>
+                        <a href='#' title="Вконтакте"><div class="vk"></div></a>
                     </div>
+                </div>
+                <div class="spisok">
+                    <h6>Auto parts</h6>
+                    <ul>
+                        <li><a href='#' title="Оплата">Оплата</a></li>
+                        <li><a href='#' title="Возврат">Возврат</a></li>
+                        <li><a href='#' title="О компании">О компании</a></li>
+                        <li><a href='#' title="Каталог">Каталог ТО</a></li>
+                        <li><a href='#' title="Сопутствующие товары">Сопутствующие товары</a></li>
+                        <li><a href='#' title="Акции">Акции</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

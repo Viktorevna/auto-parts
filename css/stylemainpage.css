@@ -62,25 +62,41 @@ body {
     max-width: 1500px;
     min-width: 800px;
 }
-/* .main {
-    display: flex;
-    flex-direction: column;
-} */
-
 
 
 
 .header .container {
     display: flex;
 }
-.header .container .menu {
+.header .menu {
     flex: 1;
 }
-.header .container .menu ul {
+.header .menu .menu_main {
     display: flex;
     flex-direction: row;
 }
-.header .container .menu li {
+.header .menu .menu_list {
+    position: relative;
+}
+.header .menu .menu_drop {
+    position: absolute;
+    width: 250px;
+    background-color: #1E212A;  
+    opacity: 0;
+    margin-left: -12px;
+    padding-bottom: 10px;
+    padding-top: 38px;
+    left: -99999em;
+    transition: opacity 0.3s;
+}
+    .header .menu .menu_drop li{
+        padding: 12px;
+    }
+.header .menu .menu_list:hover .menu_drop {
+    opacity: 1;
+    left: 0;
+}
+.header .container .menu .menu_main > li {
     margin: 40px auto auto 0;
     font-size: 18px;
 }
@@ -105,37 +121,89 @@ body {
     display: flex;
 }
 .header .container .place {
-    flex: 5;
+    flex: 3;
 }
 .header .container .icons {
-    flex: 2;
+    flex: 4;
     display: flex;
     justify-content: space-around;
     text-align: right;
     margin: 38px auto;
 }
-.header .container .icons .user {
-    background-image: url("../img/2user.svg");
+.header .icons .phone {
+    background-image: url("../img/mainpage/1phone.svg");
+    background-size: 23.8px 23.81px;
+    width: 23.8px;
+    height: 23.81px;
+    background-repeat: no-repeat;
+}
+    .header .icons .phone:hover {
+        background-image: url("../img/mainpage/1phone2.svg");
+        background-repeat: no-repeat;
+    }
+.header .icons .phone_list {
+    position: relative;
+}
+.header .icons .phone_drop {
+    position: absolute;
+    width: 300px;
+    background-color: #1E212A;  
+    opacity: 0;
+    z-index: 1;
+    text-align: left;
+    margin-left: -80px;
+    padding-top: 38px;
+    padding-bottom: 10px;
+    left: -99999em;
+    transition: opacity 0.3s;
+}
+    .header .icons .phone_drop li {
+        padding: 12px;
+    }
+    .header .icons .phone_drop li span {
+        font-weight: bold;
+        color: #CE9840;
+    }
+    .header .icons .phone_drop li a {
+        color: white;
+    }
+.header .icons .phone_list:hover .phone_drop {
+    opacity: 1;
+    left: 0;
+}
+.header .icons .user {
+    background-image: url("../img/mainpage/2user.svg");
     background-size: 23.82px 23.81px;
     width: 23.82px;
     height: 23.81px;
     background-repeat: no-repeat;
 }
-.header .container .icons .user:hover {
-    background-image: url("../img/2user2.svg");
-    background-repeat: no-repeat;
-}
-.header .container .icons .basket {
-    background-image: url("../img/3basket.svg");
+    .header .icons .user:hover {
+        background-image: url("../img/mainpage/2user2.svg");
+        background-repeat: no-repeat;
+    }
+.header .icons .basket {
+    background-image: url("../img/mainpage/3basket.svg");
     background-size: 26.32px 24.05px;
     width: 26.32px;
     height: 24.05px;
     background-repeat: no-repeat;
 }
-.header .container .icons .basket:hover {
-    background-image: url("../img/3basket2.svg");
+    .header .icons .basket:hover {
+        background-image: url("../img/mainpage/3basket2.svg");
+        background-repeat: no-repeat;
+    }
+.header .icons .quest {
+    background-image: url("../img/mainpage/4quest.svg");
+    background-size: 15.08px 23.81px;
+    width: 15.08px;
+    height: 23.81px;
     background-repeat: no-repeat;
 }
+    .header .icons .quest:hover {
+        background-image: url("../img/mainpage/4quest2.svg");
+        background-repeat: no-repeat;
+    }   
 
 
 
@@ -144,7 +212,7 @@ body {
 
 
 .search {
-    background-color: #707070;
+    background-color: #3E4046;
 }
 .search .containersmall {
     display: flex;
@@ -162,6 +230,7 @@ body {
     width: 80%;
     font-size: 25px;
     line-height: 35px;
+    margin-top: 15px;
     margin-left: 10%;
     flex: 2;
     display: flex;
@@ -170,7 +239,7 @@ body {
 .search .searchtext .searchsearch {
     flex: 1;
     margin-left: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
     width: 180%;
     z-index: 1;
     display: flex;
@@ -210,10 +279,10 @@ body {
 }
 .search .containersmall .searchimg {
     flex: 1;
-    background-image: url("../img/50search.png");
-    background-size: 751px 423px;
+    background-image: url("../img/mainpage/50search.png");
+    background-size: 751px 387px;
     width: 751px;
-    height: 423px;
+    height: 387px;
     background-repeat: no-repeat;
     z-index: 0;
 }
@@ -251,8 +320,9 @@ body {
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
 #switch2:checked ~ #controls label:nth-child(1),
-#switch3:checked ~ #controls label:nth-child(2) {
-	background-image: url("../img/51arrow1.svg"); /*заливка фона картинкой без повторений*/
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3) {
+	background-image: url("../img/mainpage/51arrow1.svg"); /*заливка фона картинкой без повторений*/
     background-repeat: no-repeat;
     float: left;
 	margin: -18% 0 0 3%; 
@@ -262,8 +332,9 @@ body {
 }
 /*настройка переключения и положения для правой стрелки*/
 #switch1:checked ~ #controls label:nth-child(2), 
-#switch2:checked ~ #controls label:nth-child(3){
-	background-image: url("../img/52arrow1.svg"); /*заливка фона картинкой без повторений*/
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4) {
+	background-image: url("../img/mainpage/52arrow1.svg"); /*заливка фона картинкой без повторений*/
     background-repeat: no-repeat;
     float: right;
 	margin: -18% 3% 0 0; 
@@ -287,9 +358,11 @@ label, input{ /*при наведении на стрелки или перек�
 #switch3:checked ~ #slides .image{
 	margin-left: -200%;
 }
-
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
 #active label{ /*стиль кружочков*/
-	border-radius: 50%; /*скругление углов*/
+	/* border-radius: 50%; */
 	display: inline-block; /*расположение в строку*/
 	width: 15px;
 	height: 15px;
@@ -309,7 +382,8 @@ label, input{ /*при наведении на стрелки или перек�
 /*цвет активного лейбла при активации чекбокса*/
 #switch1:checked ~ #active label:nth-child(1),
 #switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3) {
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4) {
 	background: #1E212A;
 }
 #slides .image { /*анимация пролистывания изображений*/
@@ -412,13 +486,13 @@ label, input{ /*при наведении на стрелки или перек�
     width: 130px;
 }
 .cell .bigpic4 {
-    background-image: url("../img/g4.png");
+    background-image: url("../img/mainpage/g4.png");
     background-repeat: no-repeat;
     width: 382px;
     height: 202px;
 }
 .cell .bigpic9 {
-    background-image: url("../img/g9.png");
+    background-image: url("../img/mainpage/g9.png");
     background-repeat: no-repeat;
     width: 382px;
     height: 250px;
@@ -483,7 +557,7 @@ label, input{ /*при наведении на стрелки или перек�
 
 
 .background {
-    background-image: url(../img/60back.svg);
+    background-image: url("../img/mainpage/60back.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1800px;
@@ -523,7 +597,7 @@ label, input{ /*при наведении на стрелки или перек�
     flex-wrap: wrap;
 }
 .footer .container .tg {
-    background-image: url("../img/97tg.svg");
+    background-image: url("../img/mainpage/97tg.svg");
     background-size: 40.8px 35.17px;
     width: 40.8px;
     height: 35.17px;
@@ -531,11 +605,11 @@ label, input{ /*при наведении на стрелки или перек�
     margin-right: 10px;
 }
 .footer .container .tg:hover {
-    background-image: url("../img/97tg2.svg");
+    background-image: url("../img/mainpage/97tg2.svg");
     background-repeat: no-repeat;
 }
 .footer .container .fb {
-    background-image: url("../img/98fb.svg");
+    background-image: url("../img/mainpage/98fb.svg");
     background-size: 35px 35px;
     width: 35px;
     height: 35px;
@@ -543,18 +617,18 @@ label, input{ /*при наведении на стрелки или перек�
     margin-right: 10px;
 }
 .footer .container .fb:hover {
-    background-image: url("../img/98fb2.svg");
+    background-image: url("../img/mainpage/98fb2.svg");
     background-repeat: no-repeat;
 }
 .footer .container .vk {
-    background-image: url("../img/99vk.svg");
+    background-image: url("../img/mainpage/99vk.svg");
     background-size: 50px 29.51px;
     width: 50px;
     height: 29.51px;
     background-repeat: no-repeat;
 }
 .footer .container .vk:hover {
-    background-image: url("../img/99vk2.svg");
+    background-image: url("../img/mainpage/99vk2.svg");
     background-repeat: no-repeat;
 }
 .footer .spisok {
