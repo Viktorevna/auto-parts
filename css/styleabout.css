@@ -123,12 +123,12 @@ body {
     display: flex;
 }
 .header .container .place {
-    flex: 3;
+    flex: 1;
 }
 .header .container .icons {
-    flex: 4;
+    flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: right;
     margin: 38px auto;
 }
@@ -205,5 +205,102 @@ body {
         background-image: url("../img/mainpage/4quest2.svg");
         background-repeat: no-repeat;
     } 
+
+
+
+
+
+
+.stripe {
+    background-color: #CE9840;
+    height: 15px;
+}
+
+
+
+.footer .container {
+    display: flex;
+}
+.footer .map {
+    flex: 1;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    text-align: right;
+}
+.footer .contacts-flex {
+    flex: 1;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    display: flex;
+}
+.footer .icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    padding-left: 30%;
+    padding-right: 30%;
+    flex-wrap: wrap;
+}
+.footer .container .tg {
+    background-image: url("../img/mainpage/97tg.svg");
+    background-size: 40.8px 35.17px;
+    width: 40.8px;
+    height: 35.17px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.footer .container .tg:hover {
+    background-image: url("../img/mainpage/97tg2.svg");
+    background-repeat: no-repeat;
+}
+.footer .container .fb {
+    background-image: url("../img/mainpage/98fb.svg");
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.footer .container .fb:hover {
+    background-image: url("../img/mainpage/98fb2.svg");
+    background-repeat: no-repeat;
+}
+.footer .container .vk {
+    background-image: url("../img/mainpage/99vk.svg");
+    background-size: 50px 29.51px;
+    width: 50px;
+    height: 29.51px;
+    background-repeat: no-repeat;
+}
+.footer .container .vk:hover {
+    background-image: url("../img/mainpage/99vk2.svg");
+    background-repeat: no-repeat;
+}
+.footer .spisok {
+    flex: 1;
+    margin-bottom: 95px;
+    font-size: 16px;
+    color: #707070;
+    margin-top: 95px;
+    padding-top: 30px;
+}
+.footer .spisok h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+}
+.footer .spisok ul {
+    line-height: 150%;
+}
+.footer .spisok a {
+    text-decoration: none;
+    color: #707070;
+    transition: color 0.3s;
+}
+.footer .spisok a:hover {
+    color: white;
+}
+
 
 

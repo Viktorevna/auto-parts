@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ce9840;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="38" height="36"/>
+    </clipPath>
+  </defs>
+  <g id="компоновка_строки" class="cls-2">
+    <g transform="translate(-975 -216)">
+      <rect id="Rectangle_29" data-name="Rectangle 29" class="cls-3" width="38" height="10" transform="translate(975 216)"/>
+    </g>
+    <g transform="translate(-975 -203)">
+      <rect id="Rectangle_29-2" data-name="Rectangle 29" class="cls-3" width="38" height="10" transform="translate(975 216)"/>
+    </g>
+    <g transform="translate(-975 -190)">
+      <rect id="Rectangle_29-3" data-name="Rectangle 29" class="cls-3" width="38" height="10" transform="translate(975 216)"/>
+    </g>
+  </g>
+</svg>

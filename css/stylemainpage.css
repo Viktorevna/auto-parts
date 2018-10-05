@@ -46,9 +46,9 @@ table {
 
 @font-face {
     font-family: Segoe UI;
-    src: url(../fonts/segoeui.ttf);
+    src: url("../fonts/segoeui.ttf");
     font-family: Baumans;
-    src: url(../fonts/Baumans-Regular.ttf);
+    src: url("../fonts/Baumans-Regular.ttf");
 }
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -121,12 +121,12 @@ body {
     display: flex;
 }
 .header .container .place {
-    flex: 3;
+    flex: 1;
 }
 .header .container .icons {
-    flex: 4;
+    flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: right;
     margin: 38px auto;
 }

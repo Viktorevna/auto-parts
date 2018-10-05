@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="36" height="36"/>
+    </clipPath>
+  </defs>
+  <g id="компоновка_блоки" class="cls-2">
+    <g transform="translate(-1019 -220)">
+      <rect id="Rectangle_32" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-1006 -220)">
+      <rect id="Rectangle_32-2" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-993 -220)">
+      <rect id="Rectangle_32-3" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-1019 -207)">
+      <rect id="Rectangle_32-4" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-1006 -207)">
+      <rect id="Rectangle_32-5" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-993 -207)">
+      <rect id="Rectangle_32-6" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-1019 -194)">
+      <rect id="Rectangle_32-7" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-1006 -194)">
+      <rect id="Rectangle_32-8" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+    <g transform="translate(-993 -194)">
+      <rect id="Rectangle_32-9" data-name="Rectangle 32" class="cls-3" width="10" height="10" transform="translate(1019 220)"/>
+    </g>
+  </g>
+</svg>
