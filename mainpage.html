@@ -2,20 +2,70 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href=css/stylemainpage.css>
+        <link rel="stylesheet" href="css/stylemainpage.css">
         <title>Главная</title>
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="container">
                 <div class="menu">
                     <ul class="menu_main">
                         <li><a href="mainpage.html">Главная</a></li>
-                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">О нас</a></li>
                         <li class="menu_list"><a href="#">Каталог</a>
                             <ul class="menu_drop">
-                                <li><a href="#parts">Запчасти</a></li>
-                                <li><a href="#goods">Сопутствующие товары</a></li>
+                                <li><a href="mainpage.html#parts">Запчасти</a></li>
+                                <li class="menu_list_1"><a href="mainpage.html#goods">Сопутствующие товары</a>
+                                    <ul class="menu_drop_1">
+                                        <li class="menu_list_2"><a href="#">Масла</a>
+                                            <ul class="menu_drop_2">
+                                                <li><a href="#">Трансмиссионные</a></li>
+                                                <li><a href="catalogue.html">Моторные</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_list_2"><a href="#">Автохимия</a>
+                                            <ul class="menu_drop_2">
+                                                <li><a href="#">Смазки</a></li>
+                                                <li><a href="#">Присадки</a></li>
+                                                <li><a href="#">Ароматизаторы</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_list_2"><a href="#">Шины</a>
+                                            <ul class="menu_drop_2">
+                                                <li><a href="#">Летние</a></li>
+                                                <li><a href="#">Зимние</a></li>
+                                                <li><a href="#">Всесезонные</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_list_2"><a href="#">Диски</a>
+                                            <ul class="menu_drop_2">
+                                                <li><a href="#">Литые</a></li>
+                                                <li><a href="#">Штампованные</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_list_2"><a href="#">Автоэлектроника</a>
+                                            <ul class="menu_drop_2">
+                                                <li><a href="#">Лампы</a></li>
+                                                <li><a href="#">Аккамуляторы</a></li>
+                                                <li><a href="#">Прикуриватели</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_list_2"><a href="#">Щётки стеклоочистителя</a>
+                                            <ul class="menu_drop_2">
+                                                <li><a href="#">Каркасные</a></li>
+                                                <li><a href="#">Бескаркасные</a></li>
+                                                <li><a href="#">Гибридные</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_list_2"><a href="#">Инструменты</a>
+                                            <ul class="menu_drop_2">
+                                                <li><a href="#">Отвёртки</a></li>
+                                                <li><a href="#">Свёрла</a></li>
+                                                <li><a href="#">Наборы</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li><a href="#">Оплата</a></li>
@@ -35,13 +85,13 @@
                             </ul>
                         </li>
                         <li><a href='#' title="Авторизация"><div class="user"></div></a></li>
-                        <li><a href='#' title="Корзина"><div class="basket"></div></a></li>
+                        <li><a href='basket.html' title="Корзина"><div class="basket"></div></a></li>
                         <li><a href='#' title="Помощь"><div class="quest"></div></a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="search">
+        </header>
+        <section class="search">
             <div class="containersmall">
                 <div class="searchtext">
                     <div class="abz">
@@ -53,9 +103,9 @@
                     <div class="searchsearch">
                         <div class="tabsearch">
                             <div class="tab">
-                                <a href=#"><img src="img/mainpage/45tab.svg"></a>
-                                <a href=#"><img src="img/mainpage/46tab.svg" class="img1"></a>
-                                <a href=#"><img src="img/mainpage/47tab.svg" class="img1"></a>
+                                <a href=#"><img src="img/mainpage/44tab.svg" class="img1"></a>
+                                <a href=#"><img src="img/mainpage/44tab.svg" class="img2"></a>
+                                <a href=#"><img src="img/mainpage/44tab.svg" class="img3"></a>
                             </div>
                             <input type="search" placeholder="например, 9091901164">
                         </div>
@@ -67,8 +117,8 @@
                 <div class="searchimg"> 
                 </div>
             </div>
-        </div>
-        <div class="slider">
+        </section>
+        <section class="slider">
             <div class="container">
                 <div class="all">
                     <input checked type="radio" name="respond" id="desktop">
@@ -103,14 +153,14 @@
                 </div>
             </div>
             <a href="#" name="goods"></a>
-        </div>
+        </section>
         <div class="background">
-            <div class="goodsname">
+            <section class="goodsname">
                 <div class="container">
                     <h6><a href="#">Сопутствующие товары</a></h6>
                 </div>
-            </div>
-            <div class="goods">
+            </section>
+            <section class="goods">
                 <div class="container">
                     <div class="cell">
                         <div class="list">
@@ -194,9 +244,9 @@
                             <div class="name"><a href="#">Инструменты</a></div>
                             <div class="scroll">
                                 <ul>
-                                    <li><a href="#">Много</a></li>
-                                    <li><a href="#">Разных</a></li>
-                                    <li><a href="#">Инструментов</a></li>
+                                    <li><a href="#">Отвёртки</a></li>
+                                    <li><a href="#">Свёрла</a></li>
+                                    <li><a href="#">Наборы</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -223,13 +273,13 @@
                     </div>
                 </div>
             <a href="#" name="parts"></a>
-            </div>
-            <div class="cataloguename">
+            </section>
+            <section class="cataloguename">
                 <div class="container">
                     <h6><a href="#">Каталог запчастей</a></h6>
                 </div>
-            </div>
-            <div class="catalogue">
+            </section>
+            <section class="catalogue">
                 <div class="container">
                     <div class="perech">
                         <div class="bykva">
@@ -481,10 +531,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="stripe"></div>
-        <div class="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.5087380574809!2d30.356136761458252!3d59.931852181344524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4f393ff79%3A0x56bdbf13d5255400!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEwNCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTAyNQ!5e0!3m2!1sru!2sru!4v1537890084748" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -508,7 +558,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </footer>
     </body>
 </html>
 

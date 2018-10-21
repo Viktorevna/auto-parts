@@ -86,9 +86,11 @@ body {
     background-color: #1E212A;  
     opacity: 0;
     margin-left: -12px;
+    padding-bottom: 10px;
     padding-top: 38px;
     left: -99999em;
     transition: opacity 0.3s;
+    border-bottom: 1px solid #CE9840;
 }
     .header .menu .menu_drop li{
         padding: 12px;
@@ -96,7 +98,44 @@ body {
 .header .menu .menu_list:hover .menu_drop {
     opacity: 1;
     left: 0;
+    z-index: 4;
 }
+    .header .menu .menu_list_1 {
+        position: relative;
+    }
+    .header .menu .menu_drop_1 {
+        position: absolute;
+        width: 250px;
+        background-color: #1E212A; 
+        opacity: 0;
+        margin-left: 238px;
+        top: -99999em;
+        transition: opacity 0.3s;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #CE9840;
+    }
+    .header .menu .menu_list_1:hover .menu_drop_1 {
+        opacity: 1;
+        top: 0;
+    }
+        .header .menu .menu_list_2 {
+            position: relative;
+        }
+        .header .menu .menu_drop_2 {
+            position: absolute;
+            width: 250px;
+            background-color: #1E212A; 
+            opacity: 0;
+            margin-left: 238px;
+            top: -99999em;
+            transition: opacity 0.3s;
+            padding-bottom: 10px;   
+            border-bottom: 1px solid #CE9840;
+        }
+        .header .menu .menu_list_2:hover .menu_drop_2 {
+            opacity: 1;
+            top: 0;
+        }
 .header .container .menu .menu_main > li {
     margin: 40px auto auto 0;
     font-size: 18px;
@@ -154,8 +193,10 @@ body {
     text-align: left;
     margin-left: -80px;
     padding-top: 38px;
+    padding-bottom: 10px;
     left: -99999em;
     transition: opacity 0.3s;
+    border-bottom: 1px solid #CE9840;
 }
     .header .icons .phone_drop li {
         padding: 12px;
@@ -203,7 +244,7 @@ body {
     .header .icons .quest:hover {
         background-image: url("../img/mainpage/4quest2.svg");
         background-repeat: no-repeat;
-    } 
+    }  
 
 
 
@@ -252,17 +293,22 @@ body {
             display: flex;
             align-items: center;
             height: 100px;
-            text-decoration: none;
-            color: white;
         }
-            .left .filter .pic {
-                background-image: url("../img/catalogue/4hamb.svg");
-                background-size: 25px 16px;
-                background-repeat: no-repeat;
-                width: 25px;
-                height: 16px;
-                margin-right: 5%;
+            .left .filter a {
+                text-decoration: none;
+                color: white;
+                display: flex;
             }
+                .left .filter .pic {
+                    background-image: url("../img/catalogue/4hamb.svg");
+                    background-size: 25px 16px;
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 16px;
+                }
+                .left .filter h6 {
+                    padding-left: 10%;
+                }
             .left .list {
                 margin: 15px 0;
             }
