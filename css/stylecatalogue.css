@@ -266,9 +266,17 @@ body {
             text-decoration: none;
             color: white;
         }
-            .way li a:hover {
-                text-decoration: underline;
+            .way a:after {
+                background-color: #ffffff;
+                display: block; 
+                content: "";
+                height: 1px;
+                width: 0%;
+                transition: width .3s ease-in-out;
             }
+                .way a:hover:after {
+                    width: 100%;
+                }
         .way .main a {
             font-size: 20px;
         }
@@ -354,6 +362,7 @@ body {
             color: #CE9840;
             font-weight: bold;
             cursor: pointer;
+            transition: border-color 0.2s;
         }
             .left button:hover {
                 border: 3px solid white;
@@ -458,45 +467,64 @@ body {
                 color: #1E212A;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
                 align-items: center;
                 text-align: left;
                 padding: 2% 2%;
                 box-sizing: border-box;
                 border-radius: 2%;
                 text-decoration: none;
+                transition: box-shadow 0.2s;
             }
                 .right .cell:hover {
                     box-shadow:  0 0 20px white;
                 }
+                .right .cell:hover button {
+                    opacity: 1;
+                }
                 .right .cell img {
-                    height: 40%;
+                    height: 35%;
                 }
                 .right .cell h3 {
                     font-weight: bold;
                     font-size: 18px;
                     margin: 10px 0;
-                    text-align: center;
                 }
                     .right .cell h3:hover {
                         text-decoration: underline;
                     }
-                .right .cell ul {
-                    /* text-align: left; */
-                    /* margin-left: 5px; */
-                }
                     .right .cell li {
                         font-size: 13px;
                         line-height: 20px;
                     }
-                .right .cell h2 {
-                    font-size: 18px;
-                    color: #CE9840;
-                    margin: 8px 0;
+                .right .cell .cost-button {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
                 }
-                    .right .cell h2 span {
-                        font-weight: bold;
+                    .right .cell button {
+                        height: 30px;
+                        width: 30px;
+                        opacity: 0;
+                        background: transparent;
+                        background-color: #CE9840;
+                        color: white;
+                        border: 3px solid #CE9840;
+                        font-size: 20px;
+                        border-radius: 10%;
+                        margin: 10px 0;
+                        transition: opacity 0.2s;
                     }
+                        .right .cell button:hover {
+                            cursor: pointer;
+                        }
+                    .right .cell h2 {
+                        font-size: 18px;
+                        color: #CE9840;
+                        margin: 15px 0;
+                    }
+                        .right .cell h2 span {
+                            font-weight: bold;
+                        }
         .right .pages {
             margin-left: 1%;
             padding-top: 30px;

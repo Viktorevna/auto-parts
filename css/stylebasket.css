@@ -267,13 +267,21 @@ body {
         align-items: center;
         justify-content: space-between;
     }
-        .second-menu li a {
-            text-decoration: none;
-            color: white;
+        .second-menu a {
+            color:#ffffff;
+            text-decoration:none;
         }
-            .second-menu a:hover {
-                text-decoration: underline;
+            .second-menu a:after {
+                background-color: #ffffff;
+                display: block; 
+                content: "";
+                height: 1px;
+                width: 0%;
+                transition: width .3s ease-in-out;
             }
+                .second-menu a:hover:after {
+                    width: 100%;
+                }
 
 
 
@@ -301,49 +309,24 @@ body {
         background-color: white;
         color: #1E212A;
         border-radius: 2px;
-        padding-left: 50px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         display: flex;
         align-items: center;
     }
-        .goods .choose-all {
-            height: 50px;
-            display: flex;
-        }
-            .goods .choose-all .place-start {
-                flex: 6;
-            }
-            .goods .choose-all .chose {
-                flex: 2;
-                text-align: right;
-            }
-            .goods .choose-all .chose-number {
-                flex: 2;
-                /* font-size: 20px; */
-                font-weight: bold;
-                font-size: 22px;
-                text-align: center;
-            }
-            .goods .choose-all .chose-cost {
-                flex: 1;
-                font-weight: bold;
-                font-size: 22px;
-            }
 
 
-
-            
         .goods .item {
             height: 150px;
             display: flex;
         }
             .goods .pic {
-                flex: 2;
-                border: 1px solid red;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                text-align: center;
+                width: 20%;
             }
+                .goods .pic img {
+                    height: 100px;
+                }
             .goods .description {
                 flex: 4;
                 line-height: 30px;
@@ -360,7 +343,7 @@ body {
             }
                 .goods .number .counter {
                     font-weight: bold;
-                    font-size: 22px;
+                    font-size: 30px;
                 }
                     .goods .number .counter #minusbutton {
                         transition: color 0.2s;
@@ -388,17 +371,25 @@ body {
                 flex: 1;
                 font-weight: bold;
                 font-size: 22px;
+                display: flex;
             }
-
-
-
+            .goods .delete-item {
+                flex: 0.1;
+                font-size: 25px;
+                transition: color 0.2s;
+            }
+                .goods .delete-item:hover {
+                    cursor: pointer;
+                    color: #CE9840;
+                }
 
 
         .goods .end {
             height: 50px;
             display: flex;
+            padding-right: 49px;
         }
-            .goods .end .place-end {
+            .goods .end .place {
                 flex: 6;
             }
             .goods .end .chose{
@@ -409,12 +400,13 @@ body {
                 flex: 2;
                 font-weight: bold;
                 text-align: center;
-                font-size: 22px;
+                font-size: 30px;
             }
             .goods .end .chose-cost{
                 flex: 1;
                 font-weight: bold;
                 font-size: 22px;
+                display: flex;
             }
 
 .order {
@@ -445,6 +437,7 @@ body {
             color: #CE9840;
             font-weight: bold;
             cursor: pointer;
+            transition: border-color 0.2s;
         }
             .order .checkout button:hover {
                 border: 3px solid white;
